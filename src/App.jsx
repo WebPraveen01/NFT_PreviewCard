@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <main className="card">
-        <div className="card_images">
+        <div className="card__images">
           <img
             className="card__images-layer"
             src={equilibriumImage}
             alt="nft_image"
           />
         </div>
-        <h1 className="card_title">Equilibrium #3429</h1>
+        <h1 className="card__title">Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
         <div className="card_time">
           <span className="card__time-left">
@@ -51,7 +51,7 @@ function App() {
         <a href="https://www.crio.do" target="_blank" rel="noopener noreferrer">
           Crio.do{" "}
         </a>
-        Coded By <span><a href="https://github.com/WebPraveen01" target="_blank" rel="noopener noreferrer">
+        Coded By <span><a href="https://www.github.com/WebPraveen01" target="_blank" rel="noopener noreferrer">
           Praveen Pal{" "}
         </a></span>
       </footer>
