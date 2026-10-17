@@ -15,12 +15,14 @@ function App() {
             alt="nft_image"
           />
         </div>
-        <h1 className="card__title">Equilibrium #3429</h1>
+        <div className="card__title">
+          <h1>Equilibrium #3429</h1>
+        </div>
         <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div className="card_time">
+        <div className="card__time">
           <span className="card__time-left">
             <img src={ethereumIcon} alt="NFT icon" />
-            0.041 ETH
+            <span>0.041 ETH</span>
           </span>
           <span className="card__time-right">
             <img src={clockIcon} alt="Clock icon" />3 days
