@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import equilibriumImage from './assets/image-equilibrium.jpg'
+import ethereumIcon from './assets/icon-ethereum.svg'
+import clockIcon from './assets/icon-clock.svg'
+import creatorAvatar from './assets/logo.jpeg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <main className="card">
         <div className="card_images">
           <img
             className="card__images-layer"
-            src="../src/assets/image-equilibrium.jpg"
+            src={equilibriumImage}
             alt="nft_image"
           />
         </div>
@@ -21,18 +19,18 @@ function App() {
         <p>Our Equilibrium collection promotes balance and calm.</p>
         <div className="card_time">
           <span className="card__time-left">
-            <img src="../src/assets/icon-ethereum.svg" alt="NFT icon" />
+            <img src={ethereumIcon} alt="NFT icon" />
             0.041 ETH
           </span>
           <span className="card__time-right">
-            <img src="../src/assets/icon-clock.svg" alt="Clock icon" />3 days
+            <img src={clockIcon} alt="Clock icon" />3 days
             left.
           </span>
         </div>
         <div className="card__creator">
           <img
             className=""
-            src="../src/assets/logo.jpeg"
+            src={creatorAvatar}
             alt="creataor_avatar"
             width={40}
             height={40}
