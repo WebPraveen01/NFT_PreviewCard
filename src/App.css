@@ -38,13 +38,13 @@
   aspect-ratio: 1;
   object-fit: cover;
 }
-.card__title{
+.card__title h1 {
   font-size: 29px;
   color: white;
   text-align: start
 }
 
-.card__title:hover {
+.card__title:hover h1 {
   color: #00fff7;
 }
 .card p {
@@ -52,7 +52,7 @@
   line-height: 1.6;
   text-align: start;
 }
-.card_time {
+.card__time {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@
   align-items: center;
   gap: 8px;
 }
-.card_time img {
+.card__time img {
   width: 16px;
   height: 16px;
 }
@@ -135,6 +135,6 @@ a:focus-visible{
   opacity: 1;
 }
 
-.card__title:hover {
+.card__title:hover h1 {
   color: #00fff7;
 }
