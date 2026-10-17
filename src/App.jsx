@@ -18,7 +18,7 @@ function App() {
         <div className="card__title">
           <h1>Equilibrium #3429</h1>
         </div>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <p id="info">Our Equilibrium collection promotes balance and calm.</p>
         <div className="card__time">
           <span className="card__time-left">
             <img src={ethereumIcon} alt="NFT icon" />
