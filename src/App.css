@@ -1,0 +1,140 @@
+
+* {
+  box-sizing: border-box;
+}
+
+  body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+  color: white;
+}
+#root{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+
+}
+.card{
+  width: 100%;
+  max-width: 350px;
+  padding:24px;
+  background-color: #14253d;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.card_images{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card__images-layer{
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.card_title{
+  font-size: 29px;
+  color: white;
+  text-align: start
+}
+
+.card__title:hover {
+  color: #00fff7;
+}
+.card p {
+  color: #8bacda;
+  line-height: 1.6;
+  text-align: start;
+}
+.card_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.card__time-left,
+.card__time-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card_time img {
+  width: 16px;
+  height: 16px;
+}
+.clock-icon {
+  margin-left: auto;
+}
+.card__time-left {
+  color: #00fff7;
+  font-weight: bold;
+}
+
+.card__time-right {
+  color: #8bacda;
+}
+.card__creator{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #2f415b;
+  padding-top: 16px;
+}
+.card__creator img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card__creator p {
+  margin: 0;
+}
+.card a{
+  color: white;
+  text-decoration: none;
+}
+.card a:hover,
+.attribution a:hover {
+  color: #00fff7;
+}
+a:focus-visible{
+  outline: 2px solid #00fff7;
+  outline-offset: 4px;
+}
+.attribution {
+  margin-top: 20px;
+  color:#8bacda;
+  text-align: center;
+  font-size: 16px;
+}
+
+.attribution a {
+  color: #00fff7;
+}
+
+.card__images::after {
+  content: "◉";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.55);
+  color: white;
+  font-size: 48px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card__images:hover::after {
+  opacity: 1;
+}
+
+.card__title:hover {
+  color: #00fff7;
+}
