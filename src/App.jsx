@@ -25,8 +25,8 @@ function App() {
             <span>0.041 ETH</span>
           </span>
           <span className="card__time-right">
-            <img src={clockIcon} alt="Clock icon" />3 days
-            left.
+            <img src={clockIcon} alt="Clock icon" />
+            <span>3 days left.</span>
           </span>
         </div>
         <div className="card__creator">
