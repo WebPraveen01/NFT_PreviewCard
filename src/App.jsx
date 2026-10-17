@@ -26,7 +26,6 @@ function App() {
           </span>
           <span className="card__time-right">
             <img src={clockIcon} alt="Clock icon" /><span>3 days left.</span>
-            left.
           </span>
         </div>
         <div className="card__creator">
